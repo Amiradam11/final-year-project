@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Learning Assistant</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="summarize.html">Summarize</a></li>
+            <li><a href="translate.html">Translate</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+
+    <section class="schedule">
+        <h1>Study Schedule Creator</h1>
+        <form id="schedule-form">
+            <label for="hours">Daily Study Hours:</label>
+            <input type="number" id="hours" name="hours" min="1" max="12" required>
+            <button type="submit" class="cta-button">Create Schedule</button>
+        </form>
+        <div id="schedule-results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Learning Assistant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

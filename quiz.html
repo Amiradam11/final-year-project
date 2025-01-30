@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Learning Assistant</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="summarize.html">Summarize</a></li>
+            <li><a href="translate.html">Translate</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul>
+    </nav>
+
+    <section class="quiz">
+        <h1>Quiz Generator</h1>
+        <form id="quiz-form">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" name="subject">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="english">English</option>
+            </select>
+            <button type="submit" class="cta-button">Generate Quiz</button>
+        </form>
+        <div id="quiz-results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Learning Assistant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
