@@ -1,5 +1,0 @@
-backend/
-node_modules/
-.env
-.vscode/
-frontend/index.html
