@@ -2,576 +2,98 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="proLearn is an AI learning assistant platform developed by Amir & Co. in Nile University, Abuja">
-    <meta name="keywords" content="proLearn, learning assistant, educational platform, learning, university student, final school project, sweet learning, how to graduate with good grade, smart learning, be a professor">
-    <meta name="author" content="Amir & Co.">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <title>proLearn || Learning Assistant</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0px;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
 </head>
-    <body>
 
+<body>
 
-        <!--header-->
-        <header class="main-header clearfix" role="header">
-            <div class="logo">
-                <a href="#"><em>pro</em>Learn</a>
+    <nav class="navbar">
+        <div class="logo">Learning Assistant</div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Login</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+        </ul>
+        <!-- <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="summarize.html">Summarize</a></li>
+            <li><a href="translate.html">Translate</a></li>
+            <li><a href="performance.html">Performance</a></li>
+        </ul> -->
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Your Learning Assistant</h1>
+        <p>Personalized tools to enhance your academic success.</p>
+        <div class="hero_start">
+            <a href="#features" class="cta-button" id="get-started">Learn More</a>
+            <a href="signup.html" class="cta-button" id="get-started">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Quiz Generator</h3>
+                <p>Tailored quizzes for all subjects.</p>
+                <a href="login.html" class="cta-button">Try Now</a>
             </div>
-            <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-            <nav id="menu" class="main-nav" role="navigation">
-                <ul class="main-menu">
-                    <li><a href="index.html" rel="sponsored" target="_self">Home</a></li>
-                    <li class="has-submenu"><a href="#section2">About Us</a>
-                        <ul class="sub-menu">
-                            <li><a href="#section2">Who we are?</a></li>
-                            <li><a href="#section3">What we do?</a></li>
-                            <li><a href="#section3">How it works?</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Get Started</a></li>
-                    <li><a href="#section6">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- ***** Main Banner Area Start ***** -->
-        <section class="section main-banner" id="top" data-section="section1">
-            <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
-      </video>
-
-            <div class="video-overlay header-text">
-                <div class="caption">
-                    <h6>Take Control of Your Learning Journey. Stay organized, focused, and motivated with <b>proLearn</b></h6>
-                    <!-- <div class="main-button">
-                        <div class="scroll-to-section"><a href="signup.html">Get Started</a></div>
-                    </div> -->
-                    <h2><em>Your Learning</em> Assistant</h2>
-                    <div class="main-button">
-                        <div class="scroll-to-section"><a href="#features">Our Features</a></div>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Study Schedule</h3>
+                <p>Optimize your learning time.</p>
+                <a href="login.html" class="cta-button">Create Schedule</a>
             </div>
-        </section>
-        <!-- ***** Main Banner Area End ***** -->
-
-
-        <section class="features" id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-12">
-                        <div class="features-post">
-                            <div class="features-content">
-                                <div class="content-show p-1">
-                                    <h5>Quiz Generator</h4>
-                                </div>
-                                <div class="content-hide">
-                                    <p>Tailored quizzes for all subjects.</p>
-                                    <p class="hidden-sm">Tailored quizzes for all subjects.</p>
-                                    <div class="scroll-to-section"><a href="login.html">Generate</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-12">
-                        <div class="features-post second-features">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h5>Study Schedule</h5>
-                                </div>
-                                <div class="content-hide">
-                                    <p>Optimize your learning time.</p>
-                                    <p class="hidden-sm">Optimize your learning time.</p>
-                                    <div class="scroll-to-section"><a href="login.html">Schedule</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-12">
-                        <div class="features-post third-features">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h5>Content Summarizer</h5>
-                                </div>
-                                <div class="content-hide">
-                                    <p>Summarize uploaded course materials.</p>
-                                    <p class="hidden-sm">Summarize uploaded course materials.</p>
-                                    <div class="scroll-to-section"><a href="login.html">Summarize</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-12">
-                        <div class="features-post third-features">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h5>Language Translator</h5>
-                                </div>
-                                <div class="content-hide">
-                                    <p>Translate text and documents.</p>
-                                    <p class="hidden-sm">Translate text and documents.</p>
-                                    <div class="scroll-to-section"><a href="login.html">Translate</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 col-12">
-                        <div class="features-post third-features">
-                            <div class="features-content">
-                                <div class="content-show">
-                                    <h5>Performance Tracker</h4>
-                                </div>
-                                <div class="content-hide">
-                                    <p>Identify weak areas and get feedback.</p>
-                                    <p class="hidden-sm">Identify weak areas and get feedback.</p>
-                                    <div class="scroll-to-section"><a href="login.html">Track</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Content Summarizer</h3>
+                <p>Summarize uploaded course materials.</p>
+                <a href="login.html" class="cta-button">Summarize</a>
             </div>
-        </section>
-
-        <section class="section why-us" data-section="section2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h2>Why choose proLearn?</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div id='tabs'>
-                            <ul>
-                                <li><a href='#tabs-1'>Improved Academic Performance</a></li>
-                                <li><a href='#tabs-2'>Increased Confidence</a></li>
-                                <li><a href='#tabs-3'>Enhanced Time Management</a></li>
-                            </ul>
-                            <section class='tabs-content'>
-                                <article id='tabs-1'>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="assets/images/choose-us-image-01.png" alt="">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4>Improved Academic Performance</h4>
-                                            <p>Are you tired of struggling to keep up with your coursework? Do you dream of achieving academic success and reaching your full potential? Improved academic performance is within your reach, and with the right
-                                                strategies and tools, you can unlock your full potential and achieve your academic goals. <a href="signup.html">Sign up</a> to set Clear Goals. Thank you.</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article id='tabs-2'>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="assets/images/choose-us-image-02.png" alt="">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4>Increance Confidence</h4>
-                                            <p>Unlocking Your Potential with <b>proLearn.</b> Confidence is the key to unlocking your full potential. When you feel confident, you're more likely to take risks, push beyond your comfort zone, and achieve your
-                                                goals. But what happens when self-doubt creeps in and confidence starts to wane? Don't worry, building confidence is a skill that can be developed with practice, patience, and persistence.</p>
-                                            <p>Building confidence takes time and practice, but it's worth the effort. By understanding the sources of low confidence, using effective strategies for building confidence, and harnessing the power of positive
-                                                affirmations, you can unlock your full potential and achieve your goals. Remember, confidence is not something you either have or you don't – it's something that can be developed and strengthened over time.
-                                                Do not worry <b>proLean</b> got you cover!</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article id='tabs-3'>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="assets/images/choose-us-image-03.png" alt="">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4>Enhanced Time Management</h4>
-                                            <p>Mastering Time Management: How Our Platform Helps You Achieve More Effective time management is the backbone of productivity and success. When you can manage your time efficiently, you can accomplish more, reduce
-                                                stress, and achieve your goals. However, with numerous distractions and competing demands on your time, it's easy to get sidetracked and lose focus. That's where our platform comes in – designed to help
-                                                you enhance your time management skills and unlock your full potential. By using our platform to enhance your time management skills, you can experience numerous benefits that will impact your academic and
-                                                personal life. <a rel="nofollow" href="signup.html"> Start</a> now!</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </section>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Language Translator</h3>
+                <p>Translate text and documents.</p>
+                <a href="login.html" class="cta-button">Translate</a>
             </div>
-        </section>
-
-        <section class="section coming-soon" data-section="section3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 col-xs-12">
-                        <div class="continer centerIt">
-                            <div>
-                                <h4>Take <em>the free advantage</em> now and appretiate us later!</h4>
-                                <div class="counter">
-
-                                    <div class="days">
-                                        <div class="value">00</div>
-                                        <span>Days</span>
-                                    </div>
-
-                                    <div class="hours">
-                                        <div class="value">00</div>
-                                        <span>Hours</span>
-                                    </div>
-
-                                    <div class="minutes">
-                                        <div class="value">00</div>
-                                        <span>Minutes</span>
-                                    </div>
-
-                                    <div class="seconds">
-                                        <div class="value">00</div>
-                                        <span>Seconds</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="right-content">
-                            <div class="top-content">
-                                <h6>Register your free account and <em>get immediate</em> access to all features</h6>
-                            </div>
-                            <form id="contact" action="" method="get">
-                                <div class="row" id="contact">
-
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <a href="signup.html"><button type="button" id="form-submit" class="button">Get it now </button></a>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Performance Tracker</h3>
+                <p>Identify weak areas and get feedback.</p>
+                <a href="login.html" class="cta-button">Track Performance</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- <section class="section courses" data-section="section4">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h2>Choose Your Course</h2>
-                        </div>
-                    </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="assets/images/courses-01.jpg" alt="Course #1">
-                            <div class="down-content">
-                                <h4>Digital Marketing</h4>
-                                <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-01.png" alt="Author 1">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-02.jpg" alt="Course #2">
-                            <div class="down-content">
-                                <h4>Business World</h4>
-                                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-02.png" alt="Author 2">
-                                </div>
-                                <div class="text-button-free">
-                                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-03.jpg" alt="Course #3">
-                            <div class="down-content">
-                                <h4>Media Technology</h4>
-                                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-03.png" alt="Author 3">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-04.jpg" alt="Course #4">
-                            <div class="down-content">
-                                <h4>Communications</h4>
-                                <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-04.png" alt="Author 4">
-                                </div>
-                                <div class="text-button-free">
-                                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-05.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Business Ethics</h4>
-                                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-05.png" alt="">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-01.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Photography</h4>
-                                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-01.png" alt="">
-                                </div>
-                                <div class="text-button-free">
-                                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-02.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Web Development</h4>
-                                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-02.png" alt="">
-                                </div>
-                                <div class="text-button-free">
-                                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-03.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Learn HTML CSS</h4>
-                                <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-03.png" alt="">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-04.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Social Media</h4>
-                                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-04.png" alt="">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-05.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Digital Arts</h4>
-                                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-05.png" alt="">
-                                </div>
-                                <div class="text-button-free">
-                                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/courses-01.jpg" alt="">
-                            <div class="down-content">
-                                <h4>Media Streaming</h4>
-                                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                                <div class="author-image">
-                                    <img src="assets/images/author-01.png" alt="">
-                                </div>
-                                <div class="text-button-pay">
-                                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+    <footer class="footer">
+        <p>&copy; 2023 Learning Assistant. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="script.js"></script>
 
-        <section class="section video" data-section="section5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 align-self-center">
-                        <div class="left-content">
-                            <span>our presentation is for you</span>
-                            <h4>Watch the video to learn more <em>about proLearn</em></h4>
-                            <p>This should guide you from sign up to every other features of the system<a rel="nofollow" href="signup.html">Get Started</a> now.
-                                <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-                            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">Sign Up</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <article class="video-item">
-                            <div class="video-caption">
-                                <h4>How proLearn Works</h4>
-                            </div>
-                            <figure>
-                                <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="assets/images/main-thumb.png"></a>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact" data-section="section6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h2>Let’s Keep In Touch</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-
-                        <!-- Do you need a working HTML contact-form script?
-                	
-                    Please visit https://templatemo.com/contact page -->
-
-                        <form id="contact" action="" method="post">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6">
-                                    <fieldset>
-                                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="map">
-                            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p><i class="fa fa-copyright"></i> Copyright 2023 by proLearn | <a href="" rel="sponsored" target="_self">Amir & co.</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Scripts -->
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <script src="assets/js/isotope.min.js"></script>
-        <script src="assets/js/owl-carousel.js"></script>
-        <script src="assets/js/lightbox.js"></script>
-        <script src="assets/js/tabs.js"></script>
-        <script src="assets/js/video.js"></script>
-        <script src="assets/js/slick-slider.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <script>
-            //according to loftblog tut
-            // $('.nav li:first').addClass('active');
-
-            // var showSection = function showSection(section, isAnimate) {
-            //     var
-            //         direction = section.replace(/#/, ''),
-            //         reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-            //         reqSectionPos = reqSection.offset().top - 0;
-
-            //     if (isAnimate) {
-            //         $('body, html').animate({
-            //                 scrollTop: reqSectionPos
-            //             },
-            //             800);
-            //     } else {
-            //         $('body, html').scrollTop(reqSectionPos);
-            //     }
-
-            // };
-
-            // var checkSection = function checkSection() {
-            //     $('.section').each(function() {
-            //         var
-            //             $this = $(this),
-            //             topEdge = $this.offset().top - 80,
-            //             bottomEdge = topEdge + $this.height(),
-            //             wScroll = $(window).scrollTop();
-            //         if (topEdge < wScroll && bottomEdge > wScroll) {
-            //             var
-            //                 currentId = $this.data('section'),
-            //                 reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-            //             reqLink.closest('li').addClass('active').
-            //             siblings().removeClass('active');
-            //         }
-            //     });
-            // };
-
-            // $('.main-menu, .scroll-to-section').on('click', 'a', function(e) {
-            //     if ($(e.target).hasClass('external')) {
-            //         return;
-            //     }
-            //     e.preventDefault();
-            //     $('#menu').removeClass('active');
-            //     showSection($(this).attr('href'), true);
-            // });
-
-            // $(window).scroll(function() {
-            //     checkSection();
-            // });
-        </script>
-    </body>
-
-</html>
+</body>
 
 </html>
