@@ -1,3 +1,10 @@
+// check session
+const refid = localStorage.getItem('refid');
+const auth = localStorage.getItem('auth');
+const lsUsername = localStorage.getItem('username');
+if (refid != '' || refid != 'undefine' || refid != "null" || auth != '' || auth != 'undefine' || auth != "null") {
+    // window.location.href="user/"
+}
 const backendURL = 'http://localhost:6300/user';
 // Getting form fields
 const loginForm = document.querySelector("#signin");
